@@ -2,7 +2,7 @@
  * Browser entry point: loads config, renders the countdown and keeps it ticking.
  */
 import { getTimeRemaining, pad } from './countdown.js';
-import { ConfigError, parseConfig } from './config.js';
+import { ConfigError, DEFAULTS, parseConfig } from './config.js';
 
 const CONFIG_URL = '/config.json';
 
@@ -66,8 +66,10 @@ function showError(error) {
 }
 
 function start(config) {
-  document.title = config.title;
+  // An empty title hides the heading (so the timer stays centred) but the tab still gets a name.
+  document.title = config.title || DEFAULTS.title;
   elements.title.textContent = config.title;
+  elements.title.hidden = !config.title;
   applyTheme(config.theme);
   const valueElements = buildTimer(config.units);
 
