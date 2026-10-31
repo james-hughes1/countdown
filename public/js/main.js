@@ -80,7 +80,7 @@ function start(config) {
 
     if (isComplete) {
       elements.message.textContent = config.completedMessage;
-      elements.message.hidden = false;
+      elements.message.hidden = !config.completedMessage;
       return;
     }
 

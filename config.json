@@ -1,11 +1,11 @@
 {
-  "title": "New Year 2027",
-  "endDate": "2027-01-01T00:00:00",
-  "completedMessage": "Happy New Year!",
+  "title": "",
+  "endDate": "2026-12-19T14:00:00",
+  "completedMessage": "",
   "units": ["days", "hours", "minutes", "seconds"],
   "theme": {
-    "background": "#0f172a",
-    "text": "#e2e8f0",
-    "accent": "#38bdf8"
+    "background": "#000000",
+    "text": "#ff0000",
+    "accent": "#ff0000"
   }
 }
