@@ -1,3 +1,6 @@
 node_modules/
 .DS_Store
 *.log
+
+# Copied in by the Vercel build (see vercel.json)
+/public/config.json
